@@ -1,0 +1,121 @@
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/gachon/new">가천대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/catholic/new">가톨릭대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kangwon/new">강원대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/konkuk/new">건국대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/glocal/new">건국대(글로컬)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kgu/new">경기대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/knu/new">경북대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/gsnu/new">경상대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ks/new">경성대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ginue/new">경인교대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/police/new">경찰대학</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/khu/new">경희대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/khu-global/new">경희대 (국제)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kmu/new">계명대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kaywon/new">계원예대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/korea/new">고려대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/korea-sejong/new">고려대(세종)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/afa/new">공군사관학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kongju/new">공주대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kw/new">광운대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kookmin/new">국민대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kf/new">국제패션학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/senior/new">노인대학</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dku/new">단국대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dku-cheonan/new">단국대(천안)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/daegu/new">대구대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/daejin/new">대진대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/duksung/new">덕성여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dongguk/new">동국대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dongguk-gyeongju/new">동국대(경주)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dongduk/new">동덕여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/tu/new">동명대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/donga/new">동아대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dongyang/new">동양미래대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/rasara/new">라사라패션학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/mju/new">명지대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/mokwon/new">목원대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/bu/new">백석대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/pknu/new">부경대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/bsks/new">부산경상대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/pusan/new">부산대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/syu/new">삼육대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/smu/new">상명대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/smu-cheonan/new">상명대(천안)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sangji/new">상지대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sogang/new">서강대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/skuniv/new">서경대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/seoultech/new">서울과기대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/snu/new">서울대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/seoulmode/new">서울모드패션학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/uos/new">서울시립대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/swu/new">서울여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/seoularts/new">서울예전</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sac/new">서울종합예술학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/skku/new">성균관대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sungshin/new">성신여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sejong/new">세종대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/suwon/new">수원대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sookmyung/new">숙명여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sch/new">순천향대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ssu/new">숭실대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/sewc/new">숭의여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/shingu/new">신구대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ajou/new">아주대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/esmod/new">에스모드패션학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/yonsei/new">연세대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/yonsei-wonju/new">연세대(원주)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/yu/new">영남대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/yongin/new">용인대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/wku/new">원광대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/unist/new">유니스트</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kma/new">육군사관학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/eulji/new">을지대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ewha/new">이화여대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/incheon/new">인천대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/itc/new">인하공업전문대학</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/inha/new">인하대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/chonnam/new">전남대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/chonbuk/new">전북대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/jj/new">전주대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/jeju/new">제주대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/chosun/new">조선대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/cau/new">중앙대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/cau-ansung/new">중앙대(안성)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/changwon/new">창원대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/cju/new">청주대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/cnu/new">충남대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/chungbuk/new">충북대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kaist/new">카이스트</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/postech/new">포항공대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hknu/new">한경대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kpu/new">한국산기대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hufs/new">한국외대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hufs-global/new">한국외대(글로벌)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/knsu/new">한국체대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hangkong/new">한국항공대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/kmou/new">한국해양대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hannam/new">한남대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hallym/new">한림대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hanbat/new">한밭대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hanseo/new">한서대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hansung/new">한성대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hs/new">한신대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hanyang/new">한양대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hanyang-erica/new">한양대(ERICA)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/karts/new">한예종</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/navy/new">해군사관학교</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hoseo/new">호서대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hongik/new">홍익대</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/hongik-sejong/new">홍익대(세종)</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/beppu/new">Beppu Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/dublin-city/new">Dublin City Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/jonkoping/new">Jonkoping Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/monash/new">Monash Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/nihon/new">Nihon Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/ucla/new">UCLA</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/iowa/new">Univ of Iowa</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/melbourne/new">Univ of Melbourne</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/toronto/new">Univ of Toronto</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/yokohama-national/new">Yokohama National Univ.</a></li>
+<li class="col-xs-6 col-sm-3 col-md-2"><a href="http://camscon.dev/campus/york/new">York Univ.</a></li>
