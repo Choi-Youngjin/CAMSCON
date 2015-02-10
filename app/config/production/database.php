@@ -22,10 +22,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => getenv('MYSQL_HOST'),
-			'database'  => getenv('MYSQL_DB'),
-			'username'  => getenv('MYSQL_USER'),
-			'password'  => getenv('MYSQL_PSWD'),
+			'host'      => 'localhost',
+			'database'  => 'camscon',
+			'username'  => 'root',
+			'password'  => 'tkfakeh',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

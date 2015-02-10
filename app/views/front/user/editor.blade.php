@@ -33,6 +33,8 @@ CAMSCON
 				<p>Blog @if(!empty($profile->blog))<a href="{{$profile->blog}}" target="_blank">{{$profile->blog}}</a>@else{{'-'}}@endif</p>
 				<p>Instagram @if(!empty($profile->instagram))<a href="http://instagram.com/{{$profile->instagram}}" target="_blank">{{'@'.$profile->instagram}}</a>@else{{'-'}}@endif</p>
 				<p><button type="button" id="uploadProfileBtn" class="btn btn-primary">프로필 사진 업로드</button></p>
+				<br>
+				<p style="border: 3px solid black; background-color:#DDD; padding: 10px; height:85px; text-align:center">@if(!empty($profile->intro)){{nl2br($profile->intro)}}@endif</p>
 			</div>
 
 			<div class="form-col col-xs-12 col-sm-6">
@@ -46,7 +48,7 @@ CAMSCON
 					@endif
 				@endif
 
-				<div class="alert alert-info"><strong><span class="glyphicon glyphicon-ok"></span> Tip!</strong> 변경을 원하시는 항목만 입력하시기 바랍니다.</div>
+				<div class="alert alert-info"><strong><span class="glyphicon glyphicon-ok"></span> Tip!</strong><br>1. 변경을 원하시는 항목만 입력하시기 바랍니다.<br>2. 페이스북으로 가입하신 분은 이메일과 비밀번호 변경이 불가능합니다 :(</div>
 
 				{{ Form::open(array('url'=>action('ProfileController@saveProfile'))) }}
 				<div class="form-group">
@@ -70,7 +72,11 @@ CAMSCON
 
 				<div class="form-group">
 					<label for="profileEmail">Email</label>
+					@if($profile->enum!='facebook')
 					<input type="email" id="profileEmail" name="email" class="form-control" placeholder="이메일" value="@if(Input::old('email')){{Input::old('email')}}@endif" />
+					@else
+					<input type="email" id="profileEmail" name="email" class="form-control" placeholder="이메일" disabled="disabled" value="@if(Input::old('email')){{Input::old('email')}}@endif" />
+					@endif
 					<?php
 					if($errors->has('email')) {
 						$msg='';
@@ -164,6 +170,24 @@ CAMSCON
 						}
 						printf('<p class="text-danger">%s</p>', $msg);
 					}
+					?>
+				</div>
+
+				<div class="form-group">
+					<label for="profileIntro">Introduction</label>
+					<textarea type="text" rows="5" id="profileIntro" name="intro" class="form-control" placeholder="자신을 소개할 말을 입력해주세요">@if(!empty($profile->intro)){{($profile->intro)}}@endif</textarea>
+					<?php
+					/*
+					if($errors->has('intro')) {
+						$msg='';
+						switch($errors->first('intro')) {
+							case 'max':
+								$msg='자기소개는 256 글자 이하여야 합니다!';
+								break;
+						}
+						printf('<p class="text-danger">%s</p>', $msg);
+					}
+					*/
 					?>
 				</div>
 

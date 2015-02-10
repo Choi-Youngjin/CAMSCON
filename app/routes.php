@@ -117,7 +117,7 @@ Route::group(array('before' => 'front'), function() {
 
 	/*Simple Pictorial routes*/
 	Route::get('editorials/pictorials', function() {
-		$pictorials=SimplePictorial::with('attachments')->where('status', '=', 'published')->orderBy('id', 'DESC')->get();
+		$pictorials=SimplePictorial::with('attachments')->where('status', '=', 'published')->orderBy('id', 'ASC')->get();
 		ViewData::add('pictorials', $pictorials);
 
 		return View::make('front.editorials.pictorials.list', ViewData::get());

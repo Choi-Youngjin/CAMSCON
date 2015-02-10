@@ -18,7 +18,7 @@
 	@endif
 
 	<!--jQuery UI-->
-	<!-- <link href="{{asset('packages/jquery-ui-1.11.0-hot-sneaks-full/jquery-ui.min.css')}}" rel="stylesheet" /> -->
+	<link href="{{asset('packages/jquery-ui-1.11.0-hot-sneaks-full/jquery-ui.min.css')}}" rel="stylesheet" />
 
 	<!-- Bootstrap -->
 	<link href="{{asset('packages/bootstrap-3.2.0/css/bootstrap.min.css')}}" rel="stylesheet" />
@@ -40,6 +40,15 @@
 	<link href="{{asset('front-assets/layouts/master.d8a3a870d2.css')}}" rel="stylesheet" />
 
 	@yield('head_styles')
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script type="text/javascript"> 
+		$("#sortable").sortable({
+
+		});
+	</script>
 	</head>
 <body>
 @include('includes.facebook-sdk')
@@ -51,7 +60,7 @@
 			</div>
 
 			<nav class="site-nav clearfix">
-				<ul>
+				<ul id="sortable">
 					@if(isset($RouteParams) && $RouteParams->category=='all' && $RouteParams->slug=='order' && $RouteParams->ordering=='hot')
 					<li><a href="{{action('StreetSnapController@getList', array('category'=>'all', 'slug'=>'order', 'ordering'=>'hot'))}}" class="active">Hot</a></li>
 					@else
@@ -89,18 +98,16 @@
 			<nav class="category-nav">
 				<a href="#" class="mobile-cat-btn">Fashion Inspiration <span class="caret"></span></a>
 				<div class="category-list-wrapper">
-					<ul class="category-list clearfix">
-						<li class="campus-menu">
+					<ul id="sortable" class="category-list clearfix">
+						<li class="campus-menu sorted">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'campus', 'slug'=>'all', 'ordering'=>'new'))}}" class="parent">Campus <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
-							<ul class="campus-sub-menu sub-menu row">
+							<ul id="sortable" class="campus-sub-menu sub-menu row">
 								<li class="col-xs-12 col-sm-3 col-md-2 mobile-all"><a href="{{action('StreetSnapController@getList', array('category'=>'campus', 'slug'=>'all', 'ordering'=>'new'))}}">All</a></li>
-								@foreach($CatNav->campus as $campus)
-								<li class="col-xs-6 col-sm-3 col-md-2"><a href="{{action('StreetSnapController@getList', array('category'=>'campus', 'slug'=>$campus->slug, 'ordering'=>'new'))}}">{{$campus->name}}</a></li>
-								@endforeach
+								@include('includes.campus-name')
 							</ul>
 						</li>
-						<li class="street-menu">
+						<li class="street-menu sorted">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'street', 'slug'=>'all', 'ordering'=>'new'))}}" class="parent">Street <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="street-sub-menu sub-menu">
@@ -112,7 +119,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li class="blog-menu">
+						<li class="blog-menu sorted">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'blog', 'slug'=>'all', 'ordering'=>'new'))}}">Fashion People <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="blog-sub-menu sub-menu">
@@ -126,7 +133,7 @@
 							</ul>
 						</li>
 						<li><a href="" class="deactivated">Brand <span class="caret"></span></a></li>
-						<li class="fashionweek-menu">
+						<li class="fashionweek-menu sorted">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'fashion-week', 'slug'=>'all', 'ordering'=>'new'))}}" class="parent">Fashion week <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="fashionweek-sub-menu sub-menu">
@@ -138,7 +145,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li class="festival-menu">
+						<li class="festival-menu sorted">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'festival', 'slug'=>'all', 'ordering'=>'new'))}}" class="parent">Festival/Club <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="festival-sub-menu sub-menu">
@@ -150,7 +157,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li class="gender-menu">
+						<li class="gender-menu sorted">
 							<a href="#" class="parent">Men/Ladies <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="gender-sub-menu sub-menu row">
@@ -220,4 +227,4 @@
 	<script src="{{asset('front-assets/layouts/master.76bfe9b0b9.js')}}?version=1.0.0"></script>
 	@yield('footer_scripts')
 </body>
-</html>
+</html>1

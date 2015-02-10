@@ -26,6 +26,7 @@ CAMSCON
 				@endif
 				<p>Blog @if(!empty($profile->blog))<a href="{{$profile->blog}}" target="_blank">{{$profile->blog}}</a>@else{{'-'}}@endif</p>
 				<p>Instagram @if(!empty($profile->instagram))<a href="http://instagram.com/{{$profile->instagram}}" target="_blank">{{'@'.$profile->instagram}}</a>@else{{'-'}}@endif</p>
+				<p style="width: 200px; border: 1px solid black; background-color:#DDD; text-align:center">@if(!empty($profile->intro)){{nl2br($profile->intro)}}@endif</p>
 			</div>
 			<div class="stats col-xs-12 col-sm-4">
 				<h3><strong class="stat-value">{{$stats->posts}}</strong> posts</h3>

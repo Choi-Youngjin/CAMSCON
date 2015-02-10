@@ -124,7 +124,8 @@ return array(
 		/*Service Provider for ViewData*/
 		'CafeCoder\Laravel\ViewData\ViewDataServiceProvider',
 		/*Service Provider for Tracker*/
-		'CafeCoder\Laravel\Tracker\TrackerServiceProvider'
+		'CafeCoder\Laravel\Tracker\TrackerServiceProvider',
+		'Indatus\Dispatcher\ServiceProvider'
 	),
 
 	/*

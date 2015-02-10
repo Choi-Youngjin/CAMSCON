@@ -40,7 +40,7 @@ class GroupTableSeeder extends Seeder {
 		Group::create(array('name'=>'Super Users'));
 		Group::create(array('name'=>'Blacklist'));
 	}
-
+	
 }
 
 class CampusMetaTableSeeder extends Seeder {
