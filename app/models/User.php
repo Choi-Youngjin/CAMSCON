@@ -91,4 +91,24 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		}
 	}
 
+	public static function boot()
+	{
+		parent::boot();
+		
+		static::saving(function($user){
+			
+			if (!$user){
+				return false;
+			}
+		});
+
+		static::saving(function($fbAccount){
+			
+			if (!$fbAccount){
+				return false;
+			}
+		});
+		//setup event bindings.
+	}
+
 }

@@ -42,6 +42,8 @@ class UserController extends BaseController {
 			$user->password=Hash::make($input['password']);
 			$user->nickname=$input['nickname'];
 			$user->gender=$input['gender'];
+			$user->enum="email";
+			$user->intro=null;
 
 			if($user->save()) {
 				$creds=array(
@@ -136,9 +138,11 @@ class UserController extends BaseController {
 					))->execute()->getGraphObject();
 
 					$user=new User;
-					$user->email=$user_profile->getProperty('email');
+					$user->email=null;
+					$user->enum="facebook";
 					$user->password=null;
-					$user->nickname=$user_profile->getName();
+					$user->nickname=$fbNickname;
+					$user->intro=null;
 					$gender=$user_profile->getProperty('gender');
 					if($gender=='male') {
 						$user->gender='male';
@@ -175,7 +179,7 @@ class UserController extends BaseController {
 						try {
 							$fbAccount->save();
 							if(is_object($profileImage)) {
-								$profileImage->save();
+								$profileImageImage->save();
 							}
 
 							DB::commit();

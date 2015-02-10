@@ -254,6 +254,11 @@ class ProfileController extends BaseController {
 			$user->blog=$input['blog'];
 		}
 
+		if(Input::has('intro')) {
+			$input['intro']=Input::get('intro');
+			$user->intro=$input['intro'];
+		}
+
 		$validator=Validator::make($input, $validationRules, $messages);
 
 		if($validator->passes()) {
