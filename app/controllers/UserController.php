@@ -179,7 +179,7 @@ class UserController extends BaseController {
 						try {
 							$fbAccount->save();
 							if(is_object($profileImage)) {
-								$profileImageImage->save();
+								$profileImage->save();
 							}
 
 							DB::commit();
@@ -249,5 +249,4 @@ class UserController extends BaseController {
 		$userBox=View::make('includes.user-box')->render();
 		return $userBox;
 	}//userBoxTemplate()
-
 }
