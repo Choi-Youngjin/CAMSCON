@@ -38,6 +38,7 @@ class UserController extends BaseController {
 
 		if($validator->passes()) {
 			$user=new User;
+			$user->email=$input['email'];
 			$user->password=Hash::make($input['password']);
 			$user->nickname=$input['nickname'];
 			$user->gender=$input['gender'];
