@@ -20,7 +20,7 @@ class UserController extends BaseController {
 
 		$validationRules=array(
 			'email'=>array('required', 'email', 'unique:users,email'),
-			'nickname'=>array('required', 'min:2', 'unique:users,nickname', 'unique:restricted_nicknames,nickname'),
+			'nickname'=>array('required', 'min:2', 'unique:restricted_nicknames,nickname'),
 			'password'=>array('required', 'min:8', 'confirmed'),
 			'gender'=>array('required', 'in:male,female')
 		);
@@ -38,12 +38,9 @@ class UserController extends BaseController {
 
 		if($validator->passes()) {
 			$user=new User;
-			$user->email=$input['email'];
 			$user->password=Hash::make($input['password']);
 			$user->nickname=$input['nickname'];
 			$user->gender=$input['gender'];
-			$user->enum="email";
-			$user->intro=null;
 
 			if($user->save()) {
 				$creds=array(
@@ -138,11 +135,9 @@ class UserController extends BaseController {
 					))->execute()->getGraphObject();
 
 					$user=new User;
-					$user->email=null;
-					$user->enum="facebook";
+					$user->email=$user_profile->getProperty('email');
 					$user->password=null;
-					$user->nickname=$fbNickname;
-					$user->intro=null;
+					$user->nickname=$user_profile->getName();
 					$gender=$user_profile->getProperty('gender');
 					if($gender=='male') {
 						$user->gender='male';
@@ -179,7 +174,7 @@ class UserController extends BaseController {
 						try {
 							$fbAccount->save();
 							if(is_object($profileImage)) {
-								$profileImageImage->save();
+								$profileImage->save();
 							}
 
 							DB::commit();

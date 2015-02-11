@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RestrictedNicknamesTable extends Migration {
+class CreateRestrictedNicknamesTable extends Migration {
 
 	/**
 	 * Run the migrations.
