@@ -136,7 +136,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li class="festival-menu sorted">
+						<li class="festival-menu">
 							<a href="{{action('StreetSnapController@getList', array('category'=>'festival', 'slug'=>'all', 'ordering'=>'new'))}}" class="parent">Festival/Club <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="festival-sub-menu sub-menu">
@@ -148,7 +148,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li class="gender-menu sorted">
+						<li class="gender-menu">
 							<a href="#" class="parent">Men/Ladies <span class="caret"></span></a>
 							<span class="close-btn glyphicon glyphicon-remove"></span>
 							<ul class="gender-sub-menu sub-menu row">

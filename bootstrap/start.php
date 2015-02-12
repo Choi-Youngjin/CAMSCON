@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('green'),
+	'local' => array('cafecoder-Aspire-V3-572G'),
 	'production'=>array('camscon-application')
 
 ));
