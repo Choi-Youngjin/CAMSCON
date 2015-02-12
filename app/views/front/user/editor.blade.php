@@ -123,6 +123,9 @@ CAMSCON
 							case 'regex':
 								$msg='프로필 주소는 영문, 대시, 하이픈으로만 구성할 수 있습니다!';
 								break;
+							case 'unique':
+								$msg='사용할 수 없는 프로필 주소입니다!';
+								break;
 						}
 						printf('<p class="text-danger">%s</p>', $msg);
 					}
