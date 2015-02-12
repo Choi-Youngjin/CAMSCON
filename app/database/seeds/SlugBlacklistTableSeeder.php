@@ -846,6 +846,7 @@ class SlugBlacklistTableSeeder extends Seeder {
 		SlugBlacklist::create(array('slug'=>'skku'));
 		SlugBlacklist::create(array('slug'=>'skuniv'));
 		SlugBlacklist::create(array('slug'=>'slider'));
+		SlugBlacklist::create(array('slug'=>'slug'));
 		SlugBlacklist::create(array('slug'=>'smart'));
 		SlugBlacklist::create(array('slug'=>'smartphone'));
 		SlugBlacklist::create(array('slug'=>'smu'));
