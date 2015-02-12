@@ -141,7 +141,7 @@ class UserController extends BaseController {
 					$user->email=null;
 					$user->enum="facebook";
 					$user->password=null;
-					$user->nickname=$fbNickname;
+					$user->nickname=$user_profile->getName();
 					$user->intro=null;
 					$gender=$user_profile->getProperty('gender');
 					if($gender=='male') {
