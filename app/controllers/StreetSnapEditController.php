@@ -236,6 +236,12 @@ class StreetSnapEditController extends BaseController {
 
 		//Check StreetSnap existence and ownership
 		$input=Input::only('streetsnap_id');
+		$img=Input::only('image');	
+		$validationRules=array(
+			'image'=>array('mimes:jpeg')
+		);
+
+		$validator=Validator::make($img, $validationRules);
 
 		$snap=$this->loadStreetSnap(intval($input['streetsnap_id']));
 		if($snap) {
