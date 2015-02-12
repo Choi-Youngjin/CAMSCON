@@ -125,6 +125,7 @@ return array(
 		'CafeCoder\Laravel\ViewData\ViewDataServiceProvider',
 		/*Service Provider for Tracker*/
 		'CafeCoder\Laravel\Tracker\TrackerServiceProvider',
+		/*Service Provider for Dispatcher*/
 		'Indatus\Dispatcher\ServiceProvider'
 	),
 
