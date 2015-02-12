@@ -245,4 +245,5 @@ class UserController extends BaseController {
 		$userBox=View::make('includes.user-box')->render();
 		return $userBox;
 	}//userBoxTemplate()
+	
 }
