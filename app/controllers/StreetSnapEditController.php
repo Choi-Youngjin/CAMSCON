@@ -236,45 +236,57 @@ class StreetSnapEditController extends BaseController {
 
 		//Check StreetSnap existence and ownership
 		$input=Input::only('streetsnap_id');
+		$img=Input::only('image');
+		
+		$validationRules=array(
+			'image'=>array('mimes:jpeg')
+		);
+		
+		$validator=Validator::make($img, $validationRules);
 
 		$snap=$this->loadStreetSnap(intval($input['streetsnap_id']));
 		if($snap) {
 			if(Input::hasFile('image')) {
-				$img=new StreetSnapPrimary;
-				try {
-					$img->setUploadedFile(Input::file('image'));
-					$img->restrictWidth(670);
+				if($validator->passes()) {
+					$img=new StreetSnapPrimary;
+					try {
+						$img->setUploadedFile(Input::file('image'));
+						$img->restrictWidth(670);
 
-					$oldImg=null;
-					if($snap->primary) {
-						$oldImg=$snap->primary->id;
-					}
-
-					if($snap->primary()->save($img)) {
-						if($oldImg) {
-							if($snap->pins()->count()) {
-								$snap->pins->each(function($pin) {
-									if($pin->links()->count()) {
-										$pin->links->each(function($link) {
-											$link->delete();
-										});
-									}
-
-									$pin->delete();
-								});
-							}
-							
-							$oldPrimary=StreetSnapPrimary::find($oldImg);
-							$oldPrimary->delete();
+						$oldImg=null;
+						if($snap->primary) {
+							$oldImg=$snap->primary->id;
 						}
-						$response->type='success';
-						$response->data=$img;
-					} else {
-						throw new Exception("Failed to save file.");
+
+						if($snap->primary()->save($img)) {
+							if($oldImg) {
+								if($snap->pins()->count()) {
+									$snap->pins->each(function($pin) {
+										if($pin->links()->count()) {
+											$pin->links->each(function($link) {
+												$link->delete();
+											});
+										}
+
+										$pin->delete();
+									});
+								}
+								
+								$oldPrimary=StreetSnapPrimary::find($oldImg);
+								$oldPrimary->delete();
+							}
+							$response->type='success';
+							$response->data=$img;
+						} else {
+							throw new Exception("Failed to save file.");
+						}
+					} catch(Exception $e) {Log::error($e);
+						$response->type='error';
+						$response->data='file_proc';
 					}
-				} catch(Exception $e) {Log::error($e);
+				} else {
 					$response->type='error';
-					$response->data='file_proc';
+					$response->data='no_jpeg';
 				}
 			} else {
 				$response->type='error';
@@ -300,24 +312,36 @@ class StreetSnapEditController extends BaseController {
 
 		//Check StreetSnap existence and ownership
 		$input=Input::only('streetsnap_id');
+		$img=Input::only('image');
+		
+		$validationRules=array(
+			'image'=>array('mimes:jpeg')
+		);
+		
+		$validator=Validator::make($img, $validationRules);
 
 		$snap=$this->loadStreetSnap(intval($input['streetsnap_id']));
 		if($snap) {
 			if(Input::hasFile('image')) {
-				$img=new StreetSnapAttachment;
-				try {
-					$img->setUploadedFile(Input::file('image'));
-					$img->restrictWidth(670);
+				if($validator->passes()) {
+					$img=new StreetSnapAttachment;
+					try {
+						$img->setUploadedFile(Input::file('image'));
+						$img->restrictWidth(670);
 
-					if($snap->primary()->save($img)) {
-						$response->type='success';
-						$response->data=$img;
-					} else {
-						throw new Exception("Failed to save file.");
+						if($snap->primary()->save($img)) {
+							$response->type='success';
+							$response->data=$img;
+						} else {
+							throw new Exception("Failed to save file.");
+						}
+					} catch(Exception $e) {Log::error($e);
+						$response->type='error';
+						$response->data='file_proc';
 					}
-				} catch(Exception $e) {Log::error($e);
+				} else {
 					$response->type='error';
-					$response->data='file_proc';
+					$response->data='no_jpeg';
 				}
 			} else {
 				$response->type='error';

@@ -553,6 +553,9 @@ var PrimaryEditor={
 							case 'file_proc':
 							PrimaryEditor.setMsg('파일 처리 실패!', 'danger');
 							break;
+							case 'no_jpeg':
+							PrimaryEditor.setMsg('jpg파일만 올릴 수 있습니다!', 'danger');
+							break;
 							case'no_file':
 							PrimaryEditor.setMsg('정상적인 업로드가 이루어지지 않았습니다!', 'danger');
 							break;
@@ -664,6 +667,9 @@ var AttachmentEditor={
 						switch(response.data) {
 							case 'file_proc':
 							AttachmentEditor.setMsg('파일 처리 실패!', 'danger');
+							break;
+							case 'no_jpeg':
+							AttachmentEditor.setMsg('jpg파일만 올릴 수 있습니다!', 'danger');
 							break;
 							case'no_file':
 							AttachmentEditor.setMsg('정상적인 업로드가 이루어지지 않았습니다!', 'danger');
