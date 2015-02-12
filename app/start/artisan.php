@@ -11,6 +11,4 @@
 |
 */
 
-Artisan::add(new EnumUpdate);
-Artisan::add(new DraftCleaner);
 Artisan::Add(new PictorialModify);

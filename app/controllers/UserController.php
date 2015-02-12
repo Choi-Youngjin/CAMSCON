@@ -16,7 +16,7 @@ class UserController extends BaseController {
 		$input=Input::only('email', 'nickname', 'password', 'password_confirmation', 'gender', 'remember');
 		$validationRules=array(
 			'email'=>array('required', 'email', 'unique:users,email'),
-			'nickname'=>array('required', 'min:2', 'unique:users,nickname', 'unique:restricted_nicknames,nickname'),
+			'nickname'=>array('required', 'min:2', 'unique:users,nickname'),
 			'password'=>array('required', 'min:8', 'confirmed'),
 			'gender'=>array('required', 'in:male,female')
 		);
@@ -210,4 +210,5 @@ class UserController extends BaseController {
 		$userBox=View::make('includes.user-box')->render();
 		return $userBox;
 	}//userBoxTemplate()
+
 }
