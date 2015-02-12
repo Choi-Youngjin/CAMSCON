@@ -38,8 +38,8 @@ class PictorialModify extends Command {
 	public function toFire($i)
 	{
 		$findID = SimplePictorial::find($i)->toArray();
-		DB::table('simple_pictorials')->insert(array('user_id' => $findID['user_id'],'title' => $findID['title'],'excerpt' => $findID['excerpt'], 'text' => $findID['text'],'cached_total_likes' => $findID['cached_total_likes'],'cached_total_comments' => $findID['cached_total_comments'],
-		'status' => $findID['status'], 'created_at' => $findID['created_at'],	'updated_at' => $findID['updated_at']));
+		DB::table('simple_pictorials')->insert(array('user_id' => $findID['user_id'],'title' => $findID['title'],'excerpt' => $findID['excerpt'],'text' => $findID['text'],'cached_total_likes' => $findID['cached_total_likes'],'cached_total_comments' => $findID['cached_total_comments'],
+		'status' => $findID['status'],'created_at' => $findID['created_at'],'updated_at' => $findID['updated_at']));
 		$getID = SimplePictorial::orderBy('id','DESC')->first()->id;
 		DB::table('simple_pictorial_attachments')->where('pictorial_id',$i)->update(array('pictorial_id'=>$getID));
 
