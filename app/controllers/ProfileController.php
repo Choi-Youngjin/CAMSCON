@@ -238,7 +238,7 @@ class ProfileController extends BaseController {
 		
 		if(Input::has('slug')) {
 			$input['slug']=Input::get('slug');
-			$validationRules['slug']=array('required', 'min:4', 'regex:/^[A-Za-z-_]+$/', 'unique:slug_blacklist,slug');
+			$validationRules['slug']=array('required', 'min:4', 'regex:/^[A-Za-z-_]+$/', 'unique:users,slug', 'unique:slug_blacklist,slug');
 			$user->slug=$input['slug'];
 		}
 
