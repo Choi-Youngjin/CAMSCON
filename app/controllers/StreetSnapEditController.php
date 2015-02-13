@@ -236,7 +236,7 @@ class StreetSnapEditController extends BaseController {
 
 		//Check StreetSnap existence and ownership
 		$input=Input::only('streetsnap_id');
-	
+
 		$snap=$this->loadStreetSnap(intval($input['streetsnap_id']));
 		if($snap) {
 			if(Input::hasFile('image')) {
