@@ -50,6 +50,7 @@ class SlugBlacklistTableSeeder extends Seeder {
 		SlugBlacklist::create(array('slug'=>'animation'));
 		SlugBlacklist::create(array('slug'=>'anniversary'));
 		SlugBlacklist::create(array('slug'=>'answer'));
+		SlugBlacklist::create(array('slug'=>'api'));
 		SlugBlacklist::create(array('slug'=>'app'));
 		SlugBlacklist::create(array('slug'=>'apparel'));
 		SlugBlacklist::create(array('slug'=>'apple'));
@@ -252,6 +253,7 @@ class SlugBlacklistTableSeeder extends Seeder {
 		SlugBlacklist::create(array('slug'=>'daum'));
 		SlugBlacklist::create(array('slug'=>'day'));
 		SlugBlacklist::create(array('slug'=>'db'));
+		SlugBlacklist::create(array('slug'=>'dbadmin'));
 		SlugBlacklist::create(array('slug'=>'dbserver'));
 		SlugBlacklist::create(array('slug'=>'dbtale'));
 		SlugBlacklist::create(array('slug'=>'delete'));
@@ -263,7 +265,7 @@ class SlugBlacklistTableSeeder extends Seeder {
 		SlugBlacklist::create(array('slug'=>'dev'));
 		SlugBlacklist::create(array('slug'=>'develop'));
 		SlugBlacklist::create(array('slug'=>'developer'));
-		SlugBlacklist::create(array('slug'=>'developper'));
+		SlugBlacklist::create(array('slug'=>'developers'));
 		SlugBlacklist::create(array('slug'=>'device'));
 		SlugBlacklist::create(array('slug'=>'diary'));
 		SlugBlacklist::create(array('slug'=>'dic'));
@@ -873,6 +875,7 @@ class SlugBlacklistTableSeeder extends Seeder {
 		SlugBlacklist::create(array('slug'=>'stabilization'));
 		SlugBlacklist::create(array('slug'=>'stack'));
 		SlugBlacklist::create(array('slug'=>'stage'));
+		SlugBlacklist::create(array('slug'=>'staging'));
 		SlugBlacklist::create(array('slug'=>'stand'));
 		SlugBlacklist::create(array('slug'=>'start'));
 		SlugBlacklist::create(array('slug'=>'startup'));
