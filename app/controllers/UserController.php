@@ -20,7 +20,7 @@ class UserController extends BaseController {
 
 		$validationRules=array(
 			'email'=>array('required', 'email', 'unique:users,email'),
-			'nickname'=>array('required', 'min:2', 'unique:restricted_nicknames,nickname'),
+			'nickname'=>array('required', 'min:2'),
 			'password'=>array('required', 'min:8', 'confirmed'),
 			'gender'=>array('required', 'in:male,female')
 		);
